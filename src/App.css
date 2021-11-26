@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background-color: rgb(199, 146, 199);
   color: white;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+header {
+  font-size: 2rem;
+  color: black;
+}
+header,
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  color: black;
 }
 
-.App-link {
-  color: #61dafb;
+form button {
+  color: #8f74f0;
+  background: cyan;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+form button:hover {
+  background: rgb(228, 141, 156);
+  color: cyan;
+}
+header {
+  flex-direction: column;
+}
+.filter-todo {
+  margin-left: 20px;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  /* align-items: center;
+  margin-top: 10px; */
+  gap: 12px;
+  /* margin: auto;
+  flex-wrap: wrap; */
+}
+.todo-item {
+  list-style: none;
+}
+.complete-btn,
+.trash-btn {
+  margin: 10px;
+  padding: 10px;
+}
+.complete-btn {
+  background-color: green;
+}
+.complete-btn:hover {
+  background-color: yellowgreen;
+}
+.trash-btn {
+  background-color: red;
+}
+.trash-btn:hover {
+  background-color: brown;
+}
+.completed {
+  opacity: 0.2;
+}
+@media (max-width: 578px) {
+  header {
+    font-size: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+  form {
+    font-size: 1rem;
+  }
+  form input,
+  form button {
+    font-size: 1rem;
+    padding: 0.8px;
+  }
+  .filter-todo {
+    font-size: 1rem;
+    padding: 0.8px;
+  }
+  .complete-btn {
+    font-size: 1rem;
+    padding: 0.8px;
+  }
+  .trash-btn {
+    font-size: 1rem;
+    padding: 0.8px;
+  }
+  .todo {
+    gap: 2px;
   }
 }
