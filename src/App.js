@@ -26,7 +26,7 @@ function App() {
         break;
 
       case "uncompleted":
-        setFilteredTodos(todos.filter((todo) => todo.completed === true));
+        setFilteredTodos(todos.filter((todo) => todo.completed === false));
         break;
       default:
         setFilteredTodos(todos);

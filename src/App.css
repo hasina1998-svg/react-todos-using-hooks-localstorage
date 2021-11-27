@@ -51,12 +51,16 @@ header {
 .todo {
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 120%;
   /* align-items: center;
   margin-top: 10px; */
   gap: 12px;
   /* margin: auto;
   flex-wrap: wrap; */
+}
+.todo-li {
+  /* background-color: pink; */
+  width: 80%;
 }
 .todo-item {
   list-style: none;
@@ -80,6 +84,9 @@ header {
 }
 .completed {
   opacity: 0.2;
+}
+.card {
+  background-color: pink;
 }
 @media (max-width: 578px) {
   header {

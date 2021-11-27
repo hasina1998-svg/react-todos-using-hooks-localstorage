@@ -22,10 +22,12 @@ const Todo = ({ text, todo, setTodos, todos }) => {
 
   return (
     <div className="todo">
-      <li className={`todo-item ${todo.completed ? "completed" : ""}`}>
-        {" "}
-        {text}
-      </li>
+      <div className="todo-li">
+        <li className={`todo-item ${todo.completed ? "completed" : ""}`}>
+          {" "}
+          {text}
+        </li>
+      </div>
       <button onClick={completeHandler} className="complete-btn">
         {" "}
         <i class="fas fa-check"></i>
